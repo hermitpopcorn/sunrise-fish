@@ -1,0 +1,57 @@
+.page-content.organigram {
+    > h1.title {
+        font-size: 2.5em;
+        text-align: center;
+        @include ff-thinsans;
+    }
+
+    .switcher {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        background: $main-green;
+
+        a {
+            color: #fff;
+            font-weight: bold;
+            padding: 0.5em 1em;
+        }
+    }
+
+    .slider {
+        color: #fff;
+
+        .slide {
+            width: 100%;
+            position: relative;
+        }
+        img {
+            max-width: 100%;
+        }
+
+        .info-text {
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-top: 5%;
+            padding-left: 1em;
+        }
+
+        .slide#slide-pimpinan {
+            .info-text {
+                width: 50%;
+                height: 100%;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding-top: 5%;
+                padding-left: 1em;
+            }
+        }
+    }
+}

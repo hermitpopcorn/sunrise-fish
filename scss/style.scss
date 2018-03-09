@@ -1,3 +1,7 @@
-body {
-    font-size: 1em;
-}
+@import "variables";
+@import "fonts";
+@import "global";
+@import "header";
+@import "content";
+@import "pages_organigram";
+@import "footer";

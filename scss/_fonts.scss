@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@mixin ff-main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+@mixin ff-thinsans {
+    font-family: 'Raleway', sans-serif;
+}

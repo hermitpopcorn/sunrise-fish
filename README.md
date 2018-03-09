@@ -3,5 +3,6 @@
 
 ```
 yarn install
+gulp vendor
 gulp compile
 ```

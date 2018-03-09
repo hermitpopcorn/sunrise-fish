@@ -34,6 +34,12 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/jquery'))
 
+    // Slick Carousel
+    gulp.src([
+        './node_modules/slick-carousel/slick/**/*'
+    ])
+    .pipe(gulp.dest('./vendor/slick-carousel'))
+
 });
 
 // Compile SCSS

@@ -1,20 +1,45 @@
-    </div> <!-- /.container -->
+            <footer>
+                <div class="container">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-md-2 col-sm-3 col-6 my-auto text-right">
+                            <img src="<?php echo get_bloginfo('template_directory');?>/images/logo-himade.png" class="logo">
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-6 my-auto text-left">
+                            <img src="<?php echo get_bloginfo('template_directory');?>/images/logo-koiya.png" class="logo">
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12 my-auto text-left links">
+                            <div class="row p-2">
+                                <div class="col-md-4 col-sm-6 text-left mt-2 mb-2">
+                                    <b class="d-block">Sitemap</b>
+                                    <a class="d-block" href="http://himade.fib.unpad.ac.id/">Blog HIMADE</a>
+                                    <a class="d-block" href="http://himade.fib.unpad.ac.id/organigram/">Organigram Pengurus</a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 text-left mt-2 mb-2">
+                                    <b class="d-block">Social Media</b>
+                                    <a class="d-block" href="https://instagram.com/himadeunpad">Instagram</a>
+                                    <a class="d-block" href="https://page.line.me/himadeunpad">Line OA</a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 text-left mt-2 mb-2">
+                                    <b class="d-block">Kontak</b>
+                                    <a class="d-block" href="mailto:unpadhimade@gmail.com">Email</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container mb-4">
+                    <div class="text-center">
+                        <span class="copyright">&copy; HIMADE S1 UNPAD 2018</span>
+                    </div>
+                </div>
+            </footer>
 
-    <footer class="blog-footer">
-        <div class="container">
-            <p>
-                Footer
-            </p>
-            <p>
-                <a href="#">Back to top</a>
-            </p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="<?php echo get_bloginfo( 'template_directory' );?>/app.js"></script>
-    <?php wp_footer(); ?>
+            <script src="<?php echo get_bloginfo('template_directory');?>/vendor/jquery/jquery.min.js"></script>
+            <script src="<?php echo get_bloginfo('template_directory');?>/vendor/bootstrap/js/bootstrap.min.js"></script>
+            <script src="<?php echo get_bloginfo('template_directory');?>/vendor/slick-carousel/slick.min.js"></script>
+            <script src="<?php echo get_bloginfo('template_directory');?>/app.js"></script>
+            <?php wp_footer(); ?>
+        </div> <!-- /.container -->
     </body>
 </html>

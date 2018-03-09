@@ -9,8 +9,10 @@
 	<meta name="author" content="HIMADE S1 UNPAD, <?php the_author(); ?>">
 
 	<title><?php echo get_bloginfo( 'name' ); ?></title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="<?php echo get_bloginfo( 'template_directory' );?>/style.css" rel="stylesheet">
+	<link href="<?php echo get_bloginfo('template_directory');?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php echo get_bloginfo('template_directory');?>/vendor/slick-carousel/slick.css" rel="stylesheet">
+	<link href="<?php echo get_bloginfo('template_directory');?>/vendor/slick-carousel/slick-theme.css" rel="stylesheet">
+	<link href="<?php echo get_bloginfo('template_directory');?>/style.css" rel="stylesheet">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

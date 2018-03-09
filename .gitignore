@@ -1,4 +1,5 @@
 node_modules/
 vendor/
-./style.css
-./app.js
+/style*css
+/app*js
+yarn-error.log
