@@ -5,6 +5,10 @@
         @include ff-thinsans;
     }
 
+    .organigram-slider {
+        background-color: #398a8d;
+    }
+
     .switcher {
         display: flex;
         justify-content: center;
@@ -39,6 +43,11 @@
             left: 0;
             padding-top: 5%;
             padding-left: 1em;
+
+            h1, h2, h3 {
+                font-family: "Futura MD BT", sans-serif;
+                font-weight: bold;
+            }
         }
 
         .slide#slide-pimpinan {

@@ -6,28 +6,20 @@
 
 		<div class="content-container">
 
-			<?php if(is_front_page()) { // Show slider in front page view
-				get_template_part('parts/main-slider');
-			} ?>
+			<?php if(is_front_page()) { // Front page view ?>
 
-			<div class="blog-main">
+				<?php get_template_part('parts/content-front-page'); ?>
 
-				<?php if(is_front_page()) { // Front page view ?>
-
-					<?php get_template_part('parts/content-front-page'); ?>
-
-				<?php } else { // Post view ?>
-					<?php
-					if(have_posts()) {
-						while (have_posts()) {
-							the_post();
-							get_template_part('content', get_post_format());
-						}
+			<?php } else { // Post view ?>
+				<?php
+				if(have_posts()) {
+					while (have_posts()) {
+						the_post();
+						get_template_part('content', get_post_format());
 					}
-					?>
-				<?php } ?>
-
-			</div>
+				}
+				?>
+			<?php } ?>
 
 		</div>
 

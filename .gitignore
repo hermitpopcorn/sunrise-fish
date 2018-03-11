@@ -1,5 +1,6 @@
 node_modules/
 vendor/
 /style*css
+/font*css
 /app*js
 yarn-error.log

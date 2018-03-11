@@ -1,4 +1,6 @@
-<div class="pr-4 pl-4">
+<?php wp_enqueue_script('js-organigram', get_bloginfo('template_directory').'/app.front-page.js', array(), false, true); // add script ?>
+<div class="p-4">
+    <?php get_template_part('parts/main-slider'); ?>
     <div class="front-page-articles">
         <div class="row row-eq-height">
         <?php

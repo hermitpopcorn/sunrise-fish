@@ -11,8 +11,11 @@
                             <div class="row p-2">
                                 <div class="col-md-4 col-sm-6 text-left mt-2 mb-2">
                                     <b class="d-block">Sitemap</b>
-                                    <a class="d-block" href="http://himade.fib.unpad.ac.id/">Blog HIMADE</a>
-                                    <a class="d-block" href="http://himade.fib.unpad.ac.id/organigram/">Organigram Pengurus</a>
+                                    <a class="d-block" href="<?php echo get_site_url() ?>/">Beranda</a>
+                                    <a class="d-block" href="<?php echo get_site_url() ?>/profil/">Profil HIMADE</a>
+                                    <a class="d-block" href="<?php echo get_site_url() ?>/agenda/">Agenda</a>
+                                    <a class="d-block" href="<?php echo get_site_url() ?>/galeri/">Galeri</a>
+                                    <a class="d-block" href="<?php echo get_site_url() ?>/organigram/">Organigram Pengurus</a>
                                 </div>
                                 <div class="col-md-4 col-sm-6 text-left mt-2 mb-2">
                                     <b class="d-block">Social Media</b>
@@ -38,7 +41,6 @@
             <script src="<?php echo get_bloginfo('template_directory');?>/vendor/jquery/jquery.min.js"></script>
             <script src="<?php echo get_bloginfo('template_directory');?>/vendor/bootstrap/js/bootstrap.min.js"></script>
             <script src="<?php echo get_bloginfo('template_directory');?>/vendor/slick-carousel/slick.min.js"></script>
-            <script src="<?php echo get_bloginfo('template_directory');?>/app.js"></script>
             <?php wp_footer(); ?>
         </div> <!-- /.container -->
     </body>

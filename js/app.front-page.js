@@ -3,13 +3,13 @@
 
     $('.main-slider').slick({
         arrows: true,
-        dots: false,
+        dots: true,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         slidesToShow: 1,
         adaptiveHeight: false,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 10000
     });
 
 })(jQuery); // End of use strict
