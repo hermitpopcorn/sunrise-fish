@@ -6,20 +6,21 @@
 
 		<div class="content-container">
 
-			<?php if(is_front_page()) { // Front page view ?>
+			<?php
+				if(is_front_page()) { // Front page view
 
-				<?php get_template_part('parts/content-front-page'); ?>
+					get_template_part('parts/content-front-page');
 
-			<?php } else { // Post view ?>
-				<?php
-				if(have_posts()) {
-					while (have_posts()) {
-						the_post();
-						get_template_part('content', get_post_format());
+				} else { // Post view
+					if(have_posts()) {
+						if(is_singular()) {
+							get_template_part('parts/content-singular');
+						} else {
+							get_template_part('parts/content-list');
+						}
 					}
 				}
-				?>
-			<?php } ?>
+			?>
 
 		</div>
 
