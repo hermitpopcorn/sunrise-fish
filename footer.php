@@ -5,7 +5,7 @@
                             <img src="<?php echo get_bloginfo('template_directory');?>/images/logo-himade.png" class="logo">
                         </div>
                         <div class="col-md-2 col-sm-3 col-6 my-auto text-left">
-                            <img src="<?php echo get_bloginfo('template_directory');?>/images/logo-koiya.png" class="logo">
+                            <img src="<?php echo get_bloginfo('template_directory');?>/images/logo-kabinet.png" class="logo">
                         </div>
                         <div class="col-md-8 col-sm-6 col-12 my-auto text-left links">
                             <div class="row p-2">

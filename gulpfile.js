@@ -4,6 +4,9 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var copy = require('copy');
+var del = require('del');
+var zipper = require('gulp-zip');
 var pkg = require('./package.json');
 
 // Copy third party libraries from /node_modules into /vendor
@@ -83,3 +86,22 @@ gulp.task('dev', ['css', 'js'], function() {
     gulp.watch('./scss/*.scss', ['css']);
     gulp.watch('./js/*.js', ['js']);
 });
+
+// Single out files that are non-development files
+gulp.task('export', ['compile'], function() {
+    del(['./export/*', '!./export/.gitignore']);
+    copy([
+        './footer.php',
+        './functions.php',
+        './header.php',
+        './index.php',
+        './*.js',
+        './*.css',
+        './fonts/**',
+        './functions/**',
+        './images/**',
+        './parts/**',
+        './vendor/**',
+        '!./gulpfile.js'
+    ], './export', function(err, file) {});
+});``

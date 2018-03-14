@@ -12,6 +12,9 @@
 
         var toShow = $(this).data('slide-id');
         switching = true;
+        $('html, body').animate({
+            scrollTop: $("#slider-head").offset().top
+        }, 300);
         $(".organigram-slider .slider #slide-"+activeSlide).fadeOut(300, function() {
             $(".organigram-slider .slider #slide-"+toShow).fadeIn(300, function() {
                 activeSlide = toShow; switching = false;
