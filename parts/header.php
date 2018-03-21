@@ -1,13 +1,13 @@
 <nav class="navbar d-lg-block">
     <h1 class="logo">
         <a href="<?php echo get_bloginfo( 'wpurl' );?>">
-            <img src="<?php echo get_bloginfo('template_directory');?>/images/header-logo.png">
+            <img src="<?php echo get_bloginfo('template_directory');?>/images/logo-himade.png">
         </a>
     </h1>
-    <button type="button" class="toggler btn btn-info btn-sm d-lg-none" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <button type="button" class="toggler btn btn-sm d-lg-none" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         Menu
     </button>
-    <div class="stripe">
+    <div class="bottom">
         <?php wp_nav_menu([
             'menu' => 'main-menu',
             'container' => 'div',

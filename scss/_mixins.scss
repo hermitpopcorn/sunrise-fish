@@ -4,3 +4,14 @@
     -webkit-transition: $transition;
     transition:         $transition;
 }
+
+@mixin linear-gradient($colorA, $colorB) {
+    background: $colorA; /* Old browsers */
+    background: -moz-linear-gradient(right,  $colorA 0%, $colorB 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left right, left bottom, color-sright(0%,$colorA), color-sright(100%,$colorB)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(right,  $colorA 0%,$colorB 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(right,  $colorA 0%,$colorB 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(right,  $colorA 0%,$colorB 100%); /* IE10+ */
+    background: linear-gradient(to right,  $colorA 0%,$colorB 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}

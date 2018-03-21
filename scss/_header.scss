@@ -4,9 +4,9 @@
     padding: 0;
     padding-top: 3em;
     position: relative;
+    background: $main-red;
 
-    .stripe {
-        background: $main-red;
+    .bottom {
         color: #fff;
         height: 3em;
     }
@@ -55,9 +55,9 @@
 
     .logo {
         position: absolute;
-        top: 0;
         left: 0.5em;
-        img { max-height: 2.5em; }
+        bottom: 0.1em;
+        img { max-height: 1.8em; }
     }
     .toggler {
         position: absolute;

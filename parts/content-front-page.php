@@ -5,8 +5,8 @@
         <div class="row row-eq-height">
         <?php
         $query = new WP_Query('category_name=berita');
+        $i = -1;
         if($query->have_posts()) {
-            $i = -1;
             while($query->have_posts() && $i < 5) {
                 $i++;
                 $query->the_post();
@@ -41,7 +41,28 @@
                 <a class="jump-to-category-list btn btn-info" href="<?php echo get_site_url() ?>/category/berita">Semua berita</a>
             </div><?php }
         }
+
+        while($i < 2) {
+            $i++;
+            ?>
+            <div class="col-md-4 mb-3 d-none d-md-block">
+                <div class="article-box no-article">
+                </div>
+            </div>
+            <?php
+        }
         ?>
         </div>
+    </div>
+</div>
+<?php // link OA  ?>
+<div class="banner-oa container">
+    <div class="row">
+        <a href="https://instagram.com/himadeunpad" class="col-md-6 text-center" id="banner-instagram">
+            <img class="banner-image" src="<?php echo get_bloginfo('template_directory');?>/images/banner-oa/instagram_ed5366.png">
+        </a>
+        <a href="https://page.line.me/himadeunpad" class="col-md-6 text-center" id="banner-line">
+            <img class="banner-image" src="<?php echo get_bloginfo('template_directory');?>/images/banner-oa/line_00ba00.png">
+        </a>
     </div>
 </div>
