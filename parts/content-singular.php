@@ -9,3 +9,7 @@ if($post->post_name == 'organigram') {
 } else {
 	get_template_part('parts/singular/content', get_post_format());
 }
+
+if ( comments_open() || get_comments_number() ) :
+	comments_template();
+endif;

@@ -1,22 +1,59 @@
+.navbar-header { height: 4em; }
+@media (min-width: 576px) { .navbar-header {
+    height: 5em;
+} }
+@media (min-width: 768px) { .navbar-header {
+    height: 6em;
+} }
+@media (min-width: 992px) { .navbar-header {
+    height: 7em;
+} }
 .navbar {
     background: #fff;
     display: block;
     padding: 0;
-    padding-top: 3em;
     position: relative;
     background: $main-red;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto 100%;
+
+    .header-left {
+        background-image: url('images/bg-header-left.png');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: auto 100%;
+    }
+    .header-right {
+        background-image: url('images/bg-header-right.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+    }
+    @media (min-width: 992px) {
+        .header-left {
+            background-size: auto 100%;
+        }
+        .header-right {
+            background-position: top center;
+            background-size: auto 65%;
+        }
+    }
 
     .bottom {
         color: #fff;
-        height: 3em;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
     .links {
         .menu {
             width: 100%;
-            text-align: right;
+            text-align: center;
             padding: 0.25em 0;
             margin: 0;
+            white-space: nowrap;
 
             li {
                 display: inline-block;
@@ -26,13 +63,13 @@
                 color: #fff;
                 text-transform: uppercase;
                 @include ff-thinsans;
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
         }
     }
 
     .mobile-links {
-        background-color: $main-red;
+        background-color: darken($main-red, 10%);
         padding-bottom: 1em;
 
         .menu {
@@ -60,8 +97,10 @@
         img { max-height: 1.8em; }
     }
     .toggler {
-        position: absolute;
-        right: 1em;
-        top: 0.5em;
+        display: block;
+        background: darken($main-red, 10%);
+        text-align: center;
+        padding: 0.5em;
+        color: #fff;
     }
 }

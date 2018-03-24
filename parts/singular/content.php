@@ -11,7 +11,7 @@
 	<?php } ?>
 			<div class="wrap">
 				<h2 class="title"><?php the_title(); ?></h2>
-				<p class="meta"><?php the_date(); ?>, ditulis oleh <a href="#"><?php the_author(); ?></a></p>
+				<p class="meta"><?php the_date(); ?>, ditulis oleh <?php the_author(); ?></p>
 			 	<div class="content">
 					<?php the_content(); ?>
 				</div>

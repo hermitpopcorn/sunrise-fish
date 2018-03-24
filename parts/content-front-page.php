@@ -39,12 +39,11 @@
             }
             if($i >= 2) { ?><div style="text-align:right">
                 <a class="jump-to-category-list btn btn-info" href="<?php echo get_site_url() ?>/category/berita">Semua berita</a>
-            </div><?php }
+            </div></div><?php }
         }
 
         while($i < 2) {
-            $i++;
-            ?>
+            $i++; ?>
             <div class="col-md-4 mb-3 d-none d-md-block">
                 <div class="article-box no-article">
                 </div>

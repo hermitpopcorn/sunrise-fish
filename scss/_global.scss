@@ -1,5 +1,9 @@
 body {
     background: #e8e8e8;
+    background: url('images/bg-unwrap.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-size: 1em;
     @include ff-main;
 }
