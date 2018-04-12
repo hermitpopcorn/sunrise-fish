@@ -6,7 +6,7 @@
     height: 6em;
 } }
 @media (min-width: 992px) { .navbar-header {
-    height: 7em;
+    height: 8em;
 } }
 .navbar {
     background: #fff;
@@ -32,11 +32,11 @@
     }
     @media (min-width: 992px) {
         .header-left {
-            background-size: auto 100%;
+            background-size: 100% 100%;
         }
         .header-right {
             background-position: top center;
-            background-size: auto 65%;
+            background-size: auto 85%;
         }
     }
 
@@ -84,7 +84,7 @@
                 color: #fff;
                 @include transition(background-color 0.5s);
                 &:hover {
-                    background: darken($main-red, 10%);
+                    background: darken($main-red, 15%);
                 }
             }
         }

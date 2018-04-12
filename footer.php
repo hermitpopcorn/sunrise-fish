@@ -11,11 +11,10 @@
                             <div class="row p-2">
                                 <div class="col-md-4 col-sm-6 text-left mt-2 mb-2">
                                     <b class="d-block">Sitemap</b>
-                                    <a class="d-block" href="<?php echo get_site_url() ?>/">Beranda</a>
-                                    <a class="d-block" href="<?php echo get_site_url() ?>/profil/">Profil HIMADE</a>
-                                    <a class="d-block" href="<?php echo get_site_url() ?>/agenda/">Agenda</a>
-                                    <a class="d-block" href="<?php echo get_site_url() ?>/galeri/">Galeri</a>
-                                    <a class="d-block" href="<?php echo get_site_url() ?>/organigram/">Organigram Pengurus</a>
+                                    <?php $menu_items = wp_get_nav_menu_items("Main Menu"); ?>
+                                    <?php foreach($menu_items as $a) { ?>
+                                        <a class="d-block" href="<?php echo $a->url ?>"><?php echo $a->title ?></a>
+                                    <?php } ?>
                                 </div>
                                 <div class="col-md-4 col-sm-6 text-left mt-2 mb-2">
                                     <b class="d-block">Social Media</b>
