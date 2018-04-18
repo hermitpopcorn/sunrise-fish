@@ -57,13 +57,46 @@
 
             li {
                 display: inline-block;
-                margin-right: 2em;
+                a {
+                    display: block;
+                    padding-left: 1em;
+                    padding-right: 1em;
+                    color: #fff;
+                    text-transform: uppercase;
+                    @include ff-thinsans;
+                    font-size: 1.2em;
+                }
             }
-            a {
-                color: #fff;
-                text-transform: uppercase;
-                @include ff-thinsans;
-                font-size: 1.2em;
+
+            .sub-menu {
+                display: none;
+                position: absolute;
+                left: 50%;
+                margin: 0 0 0 -50%;
+                background-color: $main-red;
+                padding: 0.5em 0;
+                z-index: 1;
+
+                li {
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                    margin-bottom: 0.5em;
+                    &:hover {
+                        background-color: darken($main-red, 10%);
+                    }
+                    a {
+                        padding: 0.5em 1em;
+                    }
+                }
+            }
+            .menu-item-has-children:hover {
+                position: relative;
+                color: red;
+
+                .sub-menu {
+                    display: block;
+                }
             }
         }
     }
@@ -85,6 +118,16 @@
                 @include transition(background-color 0.5s);
                 &:hover {
                     background: darken($main-red, 15%);
+                }
+            }
+
+            .sub-menu {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+
+                a {
+                    font-size: 0.8em;
                 }
             }
         }
