@@ -96,6 +96,7 @@ gulp.task('export', ['compile'], function() {
         './header.php',
         './index.php',
         './comments.php',
+        './404.php',
         './*.js',
         './*.css',
         './fonts/**',
