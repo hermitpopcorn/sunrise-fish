@@ -29,8 +29,12 @@
                                     <b class="d-block">Kontak</b>
                                     <a class="d-block" href="mailto:unpadhimade@gmail.com">Email</a>
                                     <br>
-                                    <b class="d-block">Alamat</b>
-                                    <span class="d-block">Student Center FIB Lantai 1 (depan Gedung D)</span>
+                                    <b class="d-block">Alamat Sekretariat Himade</b>
+                                    <span class="d-block">
+                                        Student Center FIB Lantai 1 (depan Gedung D)
+                                        <br/>Fakultas Ilmu Budaya Universitas Padjadjaran
+                                        <br/>Jatinangor, Sumedang 45363
+                                    </span>
                                 </div>
                             </div>
                         </div>

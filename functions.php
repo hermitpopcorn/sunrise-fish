@@ -25,3 +25,5 @@ function srf_widgets_init() {
 	));
 }
 add_action( 'widgets_init', 'srf_widgets_init' );
+
+require __DIR__ . '/functions/theme-options.php';
