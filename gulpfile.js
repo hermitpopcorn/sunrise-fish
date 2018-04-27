@@ -91,6 +91,7 @@ gulp.task('dev', ['css', 'js'], function() {
 gulp.task('export', ['compile'], function() {
     del(['./export/*', '!./export/.gitignore']);
     copy([
+        './archive.php',
         './footer.php',
         './functions.php',
         './header.php',

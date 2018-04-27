@@ -103,7 +103,7 @@
 }
 
 .post {
-    color: #444444;
+    color: inherit;
 
     .title {
         margin-bottom: 1.5rem;
@@ -136,21 +136,8 @@
 }
 
 .post.list-entry {
-    &:after {
-        content: "";
-        display: block;
-        border-bottom: 1px solid #dedede;
-        width: 80%;
-        margin: auto;
-        margin-bottom: 1em;
-    }
-
     .title, .summary {
         overflow: hidden;
-    }
-
-    .title a {
-        color: #222;
     }
 }
 

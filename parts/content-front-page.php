@@ -1,4 +1,8 @@
 <?php wp_enqueue_script('js-organigram', get_bloginfo('template_directory').'/app.front-page.js', array(), false, true); // add script ?>
+<?php
+    $srfOptions = get_option('srf-options');
+    $newsStyle = !empty($srfOptions['news-style']) ? $srfOptions['news-style'] : '2b+l';
+?>
 <div class="p-4">
     <?php get_template_part('parts/main-slider'); ?>
     <div class="front-page-articles">
@@ -10,7 +14,11 @@
             while($query->have_posts() && $i < 5) {
                 $i++;
                 $query->the_post();
-                if($i < 2) {
+                if(
+                    ($i < 2 && $newsStyle == '2b+l') // two blocks plus list
+                    ||
+                    ($i < 3 && $newsStyle == '3b') // three blocks
+                ) {
                     ?>
                     <div class="col-md-4 mb-3">
                         <a href="<?php echo get_permalink() ?>">
@@ -25,7 +33,7 @@
                         </a>
                     </div>
                     <?php
-                } else {
+                } else if($newsStyle == '2b+l') {
                     ?>
                     <?php if($i == 2) { ?><div class="col-md-4 mb-3"><?php } ?>
                         <a href="<?php echo get_permalink() ?>">
@@ -37,9 +45,11 @@
                     <?php
                 }
             }
-            if($i >= 2) { ?><div style="text-align:right">
-                <a class="jump-to-category-list btn btn-info" href="<?php echo get_site_url() ?>/category/berita">Semua berita</a>
-            </div></div><?php }
+            if($i >= 2 && $newsStyle == '2b+l') { ?>
+                <div style="text-align:right">
+                    <a class="jump-to-category-list btn btn-info" href="<?php echo get_site_url() ?>/category/berita">Semua berita</a>
+                </div></div>
+            <?php }
         }
 
         while($i < 2) {
@@ -52,6 +62,11 @@
         }
         ?>
         </div>
+        <?php if($i >= 3 && $newsStyle == '3b') { ?>
+            <div class="text-right">
+                <a class="jump-to-category-list btn btn-info" href="<?php echo get_site_url() ?>/category/berita">Semua berita</a>
+            </div></div>
+        <?php } ?>
     </div>
 </div>
 <?php // link OA  ?>

@@ -66,10 +66,18 @@ class SrfThemeOptions
         );
 
         add_settings_section(
-            'slider-settings',
-            'Front Page Slider Settings',
+            'front-page-settings',
+            'Front Page Settings',
             array($this),
             'sunrisefish-options' // Page
+        );
+
+        add_settings_field(
+            'news-style', // ID
+            'Content Body', // Title
+            array($this, 'news_style_callback'), // Callback
+            'sunrisefish-options', // Page
+            'front-page-settings' // Section
         );
 
         add_settings_field(
@@ -77,7 +85,7 @@ class SrfThemeOptions
             'Content Body', // Title
             array($this, 'slider_content_callback'), // Callback
             'sunrisefish-options', // Page
-            'slider-settings' // Section
+            'front-page-settings' // Section
         );
     }
 
@@ -87,6 +95,16 @@ class SrfThemeOptions
         return $input;
     }
 
+    public function news_style_callback() {
+        $sO = '<select id="news-style" name="srf-options[news-style]">';
+        $options = "";
+        foreach(['2b+l', '3b'] as $style) {
+            if(!empty($this->options['news-style'])) { $selected = $style == $this->options['news-style']; } else { $selected = false; }
+            $options .= '<option value="'.$style.'" '.($selected ? 'selected' : '').'>'.htmlspecialchars($style).'</option>';
+        }
+        $sC = '</select>';
+        printf($sO . $options . $sC);
+    }
     public function slider_content_callback() {
         printf(
             '<textarea id="slider-content" name="srf-options[slider-content]" rows="10" style="width: 100%%">%s</textarea>',
