@@ -2,6 +2,8 @@
 the_post();
 if($post->post_name == 'organigram') {
 	get_template_part('parts/singular/content', 'organigram');
+} else if($post->post_name == 'organigram-bpa') {
+	get_template_part('parts/singular/content', 'organigram-bpa');
 } else if($post->post_type == 'page') {
 	get_template_part('parts/singular/content', 'page');
 } else if(is_singular() === false) {
