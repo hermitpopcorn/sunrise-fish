@@ -1,0 +1,11 @@
+/* SLICK OVERRIDES */
+$override_slick-arrow-size: 40px;
+
+.slick-prev, .slick-next {
+    width: $override_slick-arrow-size;
+    height: $override_slick-arrow-size;
+}
+
+.slick-prev::before, .slick-next::before {
+    font-size: $override_slick-arrow-size;
+}
