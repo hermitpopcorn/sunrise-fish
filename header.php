@@ -8,7 +8,7 @@
 	<meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>">
 	<meta name="author" content="HIMADE S1 UNPAD, <?php the_author(); ?>">
 
-	<title><?php echo get_bloginfo( 'name' ); ?></title>
+	<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' |'; } ?> <?php bloginfo('name'); ?></title>
 	<link href="<?php echo get_bloginfo('template_directory');?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo get_bloginfo('template_directory');?>/vendor/slick-carousel/slick.css" rel="stylesheet">
 	<link href="<?php echo get_bloginfo('template_directory');?>/vendor/slick-carousel/slick-theme.css" rel="stylesheet">
