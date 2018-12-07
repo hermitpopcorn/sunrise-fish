@@ -87,6 +87,22 @@ class SrfThemeOptions
             'sunrisefish-options', // Page
             'front-page-settings' // Section
         );
+
+        add_settings_field(
+            'fp-body-extra', // ID
+            'After Body Extras', // Title
+            array($this, 'fp_body_extra_callback'), // Callback
+            'sunrisefish-options', // Page
+            'front-page-settings' // Section
+        );
+
+        add_settings_field(
+            'fp-custom-js', // ID
+            'Front Page Custom JS', // Title
+            array($this, 'fp_custom_js_callback'), // Callback
+            'sunrisefish-options', // Page
+            'front-page-settings' // Section
+        );
     }
 
     public function sanitize($input)
@@ -109,6 +125,18 @@ class SrfThemeOptions
         printf(
             '<textarea id="slider-content" name="srf-options[slider-content]" rows="10" style="width: 100%%">%s</textarea>',
             isset( $this->options['slider-content'] ) ? $this->options['slider-content'] : ''
+        );
+    }
+    public function fp_body_extra_callback() {
+        printf(
+            '<textarea id="fp-body-extra" name="srf-options[fp-body-extra]" rows="10" style="width: 100%%">%s</textarea>',
+            isset( $this->options['fp-body-extra'] ) ? $this->options['fp-body-extra'] : ''
+        );
+    }
+    public function fp_custom_js_callback() {
+        printf(
+            '<textarea id="fp-custom-js" name="srf-options[fp-custom-js]" rows="10" style="width: 100%%">%s</textarea>',
+            isset( $this->options['fp-custom-js'] ) ? $this->options['fp-custom-js'] : ''
         );
     }
 }

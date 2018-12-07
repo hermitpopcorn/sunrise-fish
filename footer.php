@@ -51,6 +51,18 @@
             <script src="<?php echo get_bloginfo('template_directory');?>/vendor/jquery/jquery.min.js"></script>
             <script src="<?php echo get_bloginfo('template_directory');?>/vendor/bootstrap/js/bootstrap.min.js"></script>
             <script src="<?php echo get_bloginfo('template_directory');?>/vendor/slick-carousel/slick.min.js"></script>
+            <?php
+            $srfOptions = get_option('srf-options');
+
+            $parser = function($input) {
+                $input = str_replace("<SITE_URL>", get_site_url(), $input);
+                $input = str_replace("<TEMPLATE_DIR>", get_bloginfo('template_directory'), $input);
+                return $input;
+            };
+
+            echo (!empty($srfOptions['fp-custom-js']) ? $parser($srfOptions['fp-custom-js']) : '');
+            echo (!empty($srfOptions['custom-js']) ? $parser($srfOptions['custom-js']) : '');
+            ?>
             <?php wp_footer(); ?>
         </div> <!-- /.container -->
     </body>
