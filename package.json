@@ -3,6 +3,8 @@
         "@fortawesome/fontawesome": "^1.1.4",
         "bootstrap": "4.0.0",
         "jquery": "^3.3.1",
+        "native": "^0.3.3",
+        "natives": "^1.1.6",
         "slick-carousel": "^1.8.1"
     },
     "devDependencies": {
