@@ -65,7 +65,7 @@
         <?php if($i >= 3 && $newsStyle == '3b') { ?>
             <div class="text-right">
                 <a class="jump-to-category-list btn btn-info" href="<?php echo get_site_url() ?>/category/berita">Semua berita</a>
-            </div></div>
+            </div>
         <?php } ?>
     </div>
 </div>
