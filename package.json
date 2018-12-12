@@ -10,11 +10,11 @@
     "devDependencies": {
         "copy": "^0.3.1",
         "del": "^3.0.0",
-        "gulp": "^3.9.1",
+        "gulp": "^4.0.0",
         "gulp-clean-css": "3.9.2",
         "gulp-header": "2.0.1",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^3.1.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^3.2.1",
         "gulp-uglify": "3.0.0",
         "gulp-zip": "^4.1.0"
     }
