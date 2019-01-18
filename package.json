@@ -1,7 +1,7 @@
 {
     "dependencies": {
         "@fortawesome/fontawesome": "^1.1.4",
-        "bootstrap": "^4.1",
+        "bootstrap": "^4.2.1",
         "jquery": "^3.3.1",
         "native": "^0.3.3",
         "natives": "^1.1.6",
