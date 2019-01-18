@@ -15,28 +15,28 @@
         </div>
         <div class="slider">
             <div class="slide" id="slide-pimpinan">
-                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/pimpinan.jpg">
+                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bph/pimpinan.jpg">
             </div>
             <div class="slide" id="slide-kestari">
-                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/kestari.jpg">
+                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bph/kestari.jpg">
             </div>
             <div class="slide" id="slide-keuangan">
-                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/keuangan.jpg">
+                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bph/keuangan.jpg">
             </div>
             <div class="slide" id="slide-adkem">
-                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/adkem.jpg">
+                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bph/adkem.jpg">
             </div>
             <div class="slide" id="slide-medfo">
-                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/medfo.jpg">
+                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bph/medfo.jpg">
             </div>
             <div class="slide" id="slide-bakmi">
-                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/bakmi.jpg">
+                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bph/bakmi.jpg">
             </div>
             <div class="slide" id="slide-psdmo">
-                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/psdmo.jpg">
+                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bph/psdmo.jpg">
             </div>
             <div class="slide" id="slide-soskem">
-                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/soskem.jpg">
+                <img src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bph/soskem.jpg">
             </div>
         </div>
     </div>

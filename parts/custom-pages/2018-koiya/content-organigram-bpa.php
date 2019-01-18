@@ -14,11 +14,11 @@
             <a href="javascript:;" data-part-id="aspirasi-dpo" id="launcher-dpo">DPO</a>
         </div>
         <div class="vertical">
-            <img id="part-inti" src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/bpa/inti.jpg">
-            <img id="part-sekretaris-adkem" src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/bpa/sekre-adkem.jpg">
-            <img id="part-psdmo-soskem" src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/bpa/psdmo-soskem.jpg">
-            <img id="part-medfo-bakmi" src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/bpa/medfo-bakmi.jpg">
-            <img id="part-aspirasi-dpo" src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/bpa/aspirasi-dpo.jpg">
+            <img id="part-inti" src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bpa/inti.jpg">
+            <img id="part-sekretaris-adkem" src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bpa/sekre-adkem.jpg">
+            <img id="part-psdmo-soskem" src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bpa/psdmo-soskem.jpg">
+            <img id="part-medfo-bakmi" src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bpa/medfo-bakmi.jpg">
+            <img id="part-aspirasi-dpo" src="<?php echo get_bloginfo('template_directory') ?>/images/organigram/2019-koiya/bpa/aspirasi-dpo.jpg">
         </div>
     </div>
 </article>
