@@ -6,6 +6,9 @@
     height: 6em;
 } }
 @media (min-width: 992px) { .navbar-header {
+    height: 6.5em;
+} }
+@media (min-width: 1200px) { .navbar-header {
     height: 8em;
 } }
 .navbar {
@@ -40,6 +43,10 @@
         }
     }
 
+    .navbar-menu  {
+        background: darken($main-red, 3%);
+    }
+
     .bottom {
         color: #fff;
         position: absolute;
@@ -51,7 +58,7 @@
         .menu {
             width: 100%;
             text-align: center;
-            padding: 0.25em 0;
+            padding: 0;
             margin: 0;
             white-space: nowrap;
 
@@ -66,6 +73,9 @@
                     @include ff-thinsans;
                     font-size: 1.2em;
                 }
+                &:hover {
+                    background-color: darken($main-red, 10%);
+                }
             }
 
             .sub-menu {
@@ -74,7 +84,7 @@
                 left: 50%;
                 margin: 0 0 0 -50%;
                 background-color: $main-red;
-                padding: 0.5em 0;
+                padding: 0;
                 z-index: 1;
 
                 li {

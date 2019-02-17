@@ -83,8 +83,8 @@ gulp.task('compile', gulp.parallel(['css', 'js', 'vendor']))
 
 // Dev task
 gulp.task('dev', gulp.series(['css', 'js'], function() {
-    gulp.watch('./scss/*.scss', ['css'])
-    gulp.watch('./js/*.js', ['js'])
+    gulp.watch('./scss/*.scss', gulp.parallel('css'))
+    gulp.watch('./js/*.js', gulp.parallel('js'))
 }))
 
 // Single out files that are non-development files

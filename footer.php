@@ -5,7 +5,7 @@
                             <img src="<?php echo get_bloginfo('template_directory');?>/images/logo-himade.png" class="logo">
                         </div>
                         <div class="col-md-2 col-sm-3 col-6 my-auto text-left">
-                            <img src="<?php echo get_bloginfo('template_directory');?>/images/logo-kabinet.png" class="logo">
+                            <img src="<?php echo get_bloginfo('template_directory');?>/images/logo-kabinet-fuurinkazan.png" class="logo">
                         </div>
                         <div class="col-md-8 col-sm-6 col-12 my-auto text-left links">
                             <div class="row p-2">
@@ -27,7 +27,7 @@
                                 </div>
                                 <div class="col-md-4 col-sm-6 text-left mt-2 mb-2">
                                     <b class="d-block">Kontak</b>
-                                    <a class="d-block" href="mailto:unpadhimade@gmail.com">Email</a>
+                                    <a class="d-block" id="email">Email</a>
                                     <br>
                                     <b class="d-block">Alamat Sekretariat Himade</b>
                                     <span class="d-block">
@@ -63,6 +63,7 @@
             echo (!empty($srfOptions['fp-custom-js']) ? $parser($srfOptions['fp-custom-js']) : '');
             echo (!empty($srfOptions['custom-js']) ? $parser($srfOptions['custom-js']) : '');
             ?>
+            <script src="<?php echo get_bloginfo('template_directory');?>/app.js"></script>
             <?php wp_footer(); ?>
         </div> <!-- /.container -->
     </body>
