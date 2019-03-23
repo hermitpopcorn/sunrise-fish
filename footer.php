@@ -24,6 +24,7 @@
                                     <b class="d-block">Social Media</b>
                                     <a class="d-block" href="https://instagram.com/himadeunpad">Instagram</a>
                                     <a class="d-block" href="https://page.line.me/himadeunpad">Line OA</a>
+                                    <a class="d-block" href="https://www.youtube.com/channel/UCtjaxlezZXxF21ibU4A6qZQ">Kanal YouTube</a>
                                 </div>
                                 <div class="col-md-4 text-left mt-2 mb-2">
                                     <b class="d-block">Kontak</b>
