@@ -13,8 +13,8 @@
 		<div class="col-md-9">
 	<?php } ?>
 			<div class="wrap">
-				<p class="meta"><?php the_date(); ?></p>
-				<h2 class="title"><?php the_title(); ?></h2>
+				<?php if(empty($meta['hide_date'])) { ?><p class="meta"><?php the_date(); ?></p><?php } ?>
+				<?php if(empty($meta['hide_title'])) { ?><h2 class="title"><?php the_title(); ?></h2><?php } ?>
 			 	<div class="content">
 					<?php the_content(); ?>
 				</div>
