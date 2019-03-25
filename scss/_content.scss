@@ -210,3 +210,12 @@ section#articles {
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 575px) {
+    .wp-block-image .alignleft,
+    .wp-block-image .aligncenter,
+    .wp-block-image .alignright {
+        float: none !important;
+        margin: auto !important;
+    }
+}
