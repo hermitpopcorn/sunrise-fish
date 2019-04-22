@@ -1,5 +1,5 @@
 <?php wp_enqueue_script('js-organigram', get_bloginfo('template_directory').'/app.organigram-bpa.js', array(), false, true); // add script ?>
-<article class="page-content organigram pt-3" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="page-content organigram k2018-koiya pt-3" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <h1 class="title pl-1 pr-1">ORGANIGRAM BADAN PERWAKILAN ANGKATAN</h1>
     <div class="organigram-slider" id="slider-head">
         <div class="switcher">

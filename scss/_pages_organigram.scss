@@ -5,16 +5,11 @@
         @include ff-thinsans;
     }
 
-    .organigram-slider {
-        background-color: #398a8d;
-    }
-
     .switcher {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
-        background: $koiya-green-bg;
 
         a {
             color: #fff;
@@ -23,8 +18,16 @@
         }
     }
 
+    .max-width-90 {
+        max-width: 90%;
+    }
+
     .slider {
         color: #fff;
+
+        .head {
+            display: block;
+        }
 
         .slide {
             width: 100%;
@@ -34,6 +37,7 @@
             max-width: 100%;
         }
 
+        // apa ya ini lupa?
         .info-text {
             position: absolute;
 
@@ -58,6 +62,36 @@
     }
 
     .vertical {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.organigram.k2018-koiya {
+    .switcher {
+        background: $koiya-green-bg;
+    }
+}
+
+.organigram.k2019-fuurinkazan {
+    .switcher, .switcher-head {
+        background: #de4949;
+    }
+    .switcher-head {
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        padding: .5em 1em;
+    }
+
+    .slider {
+        color: #fff;
+
+        .slide {
+            width: 100%;
+            position: relative;
+        }
         img {
             width: 100%;
         }
