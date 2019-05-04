@@ -2,7 +2,7 @@
     "dependencies": {
         "@fortawesome/fontawesome": "^1.1.4",
         "bootstrap": "^4.3.1",
-        "jquery": "^3.3.1",
+        "jquery": "^3.4.0",
         "native": "^0.3.3",
         "natives": "^1.1.6",
         "slick-carousel": "^1.8.1"
@@ -10,11 +10,11 @@
     "devDependencies": {
         "copy": "^0.3.2",
         "del": "^3.0.0",
-        "gulp": "^4.0.0",
+        "gulp": "^4.0.1",
         "gulp-clean-css": "^4.0.0",
         "gulp-header": "2.0.1",
         "gulp-rename": "^1.4.0",
-        "gulp-sass": "^3.2.1",
+        "gulp-sass": "^4.0.2",
         "gulp-uglify": "3.0.0",
         "gulp-zip": "^4.1.0"
     }
