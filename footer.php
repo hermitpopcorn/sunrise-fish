@@ -50,6 +50,7 @@
             </footer>
 
             <script src="<?php echo get_bloginfo('template_directory');?>/vendor/jquery/jquery.min.js"></script>
+            <script src="<?php echo get_bloginfo('template_directory');?>/vendor/popper.js/umd/popper.min.js"></script>
             <script src="<?php echo get_bloginfo('template_directory');?>/vendor/bootstrap/js/bootstrap.min.js"></script>
             <script src="<?php echo get_bloginfo('template_directory');?>/vendor/slick-carousel/slick.min.js"></script>
             <?php

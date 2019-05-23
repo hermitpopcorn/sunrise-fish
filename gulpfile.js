@@ -42,6 +42,12 @@ gulp.task('vendor', function(done) {
     ])
     .pipe(gulp.dest('./vendor/slick-carousel'))
 
+    // Slick Carousel
+    gulp.src([
+        './node_modules/popper.js/dist/**/*'
+    ])
+    .pipe(gulp.dest('./vendor/popper.js'))
+
     done()
 })
 
