@@ -26,4 +26,14 @@ function srf_widgets_init() {
 }
 add_action( 'widgets_init', 'srf_widgets_init' );
 
+/**
+ * Disable paging in category view.
+ */
+function set_nopaging($query) {
+    if (is_category()) {
+        $query->set('nopaging', 1);
+    }
+}
+add_action('parse_query', 'set_nopaging');
+
 require __DIR__ . '/functions/theme-options.php';
