@@ -12,6 +12,8 @@ gulp export
 Sudah begitu tinggal unggah isi dari folder **export** ke folder **wp-content/themes/sunrisefish**.
 
 ## Pengurus
-Zulfikar B. Fuadi (2016) - Desain, gambar
-Dani Nugraha (2017) - HTML, CSS
-Ismail Syarafi (2018) - Desain, maintenance
+Zulfikar B. Fuadi (2016) - Design
+
+Dani Nugraha (2017) - Code <- the guy you contact when shit breaks
+
+Ismail Syarafi (2018) - Design
