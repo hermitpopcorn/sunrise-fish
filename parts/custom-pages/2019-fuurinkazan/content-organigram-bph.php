@@ -8,7 +8,7 @@
     </div>
     <div class="organigram-slider" id="slider-head">
         <div class="switcher-head">
-            Departemen Kabinet Fūurinkazan
+            Departemen Kabinet Fūrinkazan
         </div>
         <div class="switcher">
             <a href="javascript:;" data-slide-id="pimpinan" id="switcher-pimpinan">Pimpinan</a>

@@ -97,3 +97,27 @@
         }
     }
 }
+
+.organigram.k2019-tendou {
+    .switcher, .switcher-head {
+        background: #5878a1;
+    }
+    .switcher-head {
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        padding: .5em 1em;
+    }
+
+    .slider {
+        color: #fff;
+
+        .slide {
+            width: 100%;
+            position: relative;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
