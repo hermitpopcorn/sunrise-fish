@@ -5,7 +5,7 @@ Disusun oleh departemen Media & Informasi HIMADE periode 2017-2018 Kabinet Koiya
 
 ## Install
 ```
-yarn install
+npm install
 gulp vendor
 gulp export
 ```
