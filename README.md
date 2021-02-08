@@ -11,9 +11,11 @@ gulp export
 ```
 Sudah begitu tinggal unggah isi dari folder **export** ke folder **wp-content/themes/sunrisefish**.
 
-## Pengurus
-Zulfikar B. Fuadi (2016) - Design
+## Sejarah Pengurus
+Zulfikar B. Fuadi (2016) initial design
 
-Dani Nugraha (2017) - Code <- the guy you contact when shit breaks
+Dani Nugraha (2017) initial code, also the guy you contact when shit breaks
 
-Ismail Syarafi (2018) - Design
+Ismail Syarafi (2018)
+
+M. Rizal Firdaus (2019)
