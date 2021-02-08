@@ -98,12 +98,15 @@ if($c_artikel) {
                         ?>
                         <div class="row pl-4 pr-4">
                             <?php while($query->have_posts()) { ?>
-                                <div class="col-12">
-                                <?php if($ii >= 3) { ?>
-                                    <div class="text-right">
-                                        <a class="jump-to-category-list btn btn-info" href="<?php echo get_site_url() ?>/category/<?php echo $i->slug ?>">Arsip <?php echo $i->name ?></a>
+                                <?php if ($ii >= 3) { ?>
+                                    <div class="col-12">
+                                        <div class="text-right">
+                                            <a class="jump-to-category-list btn btn-info" href="<?php echo get_site_url() ?>/category/<?php echo $i->slug ?>">Arsip <?php echo $i->name ?></a>
+                                        </div>
                                     </div>
-                                    <?php } else { $ii++; ?>
+                                <?php break; } else { ?>
+                                    <div class="col-12">
+                                        <?php $ii++ ?>
                                         <?php $query->the_post(); ?>
                                         <a href="<?php echo get_permalink() ?>">
                                             <div class="news-minor">
@@ -111,8 +114,8 @@ if($c_artikel) {
                                                 <p class="date"><?php echo get_the_date(); ?></p>
                                             </div>
                                         </a>
-                                    <?php } ?>
-                                </div>
+                                    </div>
+                                <?php } ?>
                             <?php } ?>
                         </div>
                     </div>
